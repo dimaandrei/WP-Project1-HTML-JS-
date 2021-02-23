@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
+
 <persoane>
     <persoana id="1">
         <nume>Popescu</nume>
@@ -10,8 +12,10 @@
             <localitate>Iasi</localitate>
             <judet>Iasi</judet>
             <tara>Romania</tara>
-            
         </adresa>
+        <liceu>Colegiul National Stefan cel Mare</liceu>
+        <facultate>AC</facultate>
+        <carnet>B</carnet>
     </persoana>
     <persoana id="2">
         <nume>Maxim</nume>
@@ -25,6 +29,9 @@
             <tara>Romania</tara>
             
         </adresa>
+        <liceu>Colegiul Racovita</liceu>
+        <facultate>ETTI</facultate>
+        <carnet>A2</carnet>
     </persoana>
     <persoana id="3">
         <nume>Pop</nume>
@@ -37,8 +44,8 @@
             <judet>Iasi</judet>
             <tara>Romania</tara>
         </adresa>
-        <liceu>Colegiul National Stefan cel Mare</liceu>
-        <facultate>AC</facultate>
-        <carnet>B</carnet>
+        <liceu>Colegiul National</liceu>
+        <facultate>DIMA</facultate>
+        <carnet>D</carnet>
     </persoana>
 </persoane>
