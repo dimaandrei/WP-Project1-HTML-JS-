@@ -1,0 +1,40 @@
+body {
+    background-color: orange;   
+}
+nav {
+    color:chartreuse;
+    background-color:brown;
+    font-family: courier;
+    font-size: 130%;
+    padding-left: 15px;
+    
+}
+a.highlight:hover {
+    color: #000000;
+}
+a:link {
+    color: #00FFFF;
+}
+a:visited {
+    color: #00FF00;
+}
+a:active {
+    color: #0000FF;
+}
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+p::first-line {
+    color: #0000ff;
+    font-variant: small-caps;
+}
+::marker {
+    color: maroon;
+    font-size: 23px;
+  }
+img{
+    margin-right: auto;
+    display: block;
+    margin-left: auto;
+}
