@@ -1,13 +1,17 @@
 body {
-    background-color: orange;   
+    background-color: rgb(107, 130, 151);
+    background-image: url("../imagini/background.jpg") ;   
+    background-size:     cover;                      
+    background-repeat:   repeat;
+    background-position: center center; 
 }
 nav {
-    color:chartreuse;
-    background-color:brown;
+    background-color:rgb(235, 99, 75);
+    background-image: linear-gradient(to left,rgb(19, 22, 22), rgb(113, 127, 153));
+    
     font-family: courier;
     font-size: 130%;
-    padding-left: 15px;
-    
+    text-align: center;
 }
 a.highlight:hover {
     color: #000000;
@@ -16,25 +20,45 @@ a:link {
     color: #00FFFF;
 }
 a:visited {
-    color: #00FF00;
+    color: #358cc7;
 }
 a:active {
     color: #0000FF;
 }
 p::first-letter {
-    color: #ff0000;
+    color: #83d7ec;
     font-size: xx-large;
 }
 p::first-line {
-    color: #0000ff;
-    font-variant: small-caps;
+    color: #8484ca;
+    font-variant: ruby;
 }
-::marker {
-    color: maroon;
+
+p::marker {
+    color: rgb(241, 241, 226);
     font-size: 23px;
   }
 img{
     margin-right: auto;
     display: block;
     margin-left: auto;
+}
+header h1 {
+    text-align: center;
+    text-decoration: underline dotted rgb(112, 172, 228);
+    
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(19, 22, 22), rgb(113, 127, 153));
+
+}
+main h1 {
+    padding-left: 25px;    
+}
+
+section h1{
+    font-size: 40px;
+  background: -webkit-linear-gradient(rgb(104, 135, 207), rgb(235, 225, 225));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
