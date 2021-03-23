@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+
+<head>
+    <title>Acasă</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/stil.css" />
+    <style>
+        section p {
+            text-indent: 1cm;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="laIncarcare(); updateClock()">
+    <header>
+        <img src="imagini/HTML_logo.png" alt="Ceva">
+        <br><br>
+        <h1>Programare web</h1>
+
+    </header>
+    <nav>
+        <hr>
+        <a href="index.html">Acasă</a>&nbsp;&nbsp;
+        <a href="inregistreaza.html">Înreg</a>&nbsp;&nbsp;
+        <a href="video.html">Video</a>&nbsp;&nbsp;
+        <a href="despre_html.html">Despre</a>&nbsp;&nbsp;
+        <a href="Desen.html">Desen</a>
+        <a href="invat_js.html">ÎnvăţJS</a>
+        <hr>
+    </nav>
+    <main>
+        <aside>
+            <section>
+                <h3>Sectiunea 1</h3>
+                <p id="date">
+                    Data curenta
+                </p>
+                <p id="adrURL">
+                    Adresa URL
+                </p>
+                <p id="locName">
+                    Locatia
+                </p>
+                <p id="appName">
+                    Numele aplicatiei
+                </p>
+                <p id="appVersion">
+                        Numele aplicatiei
+                </p>
+                <p id="userAgent">
+                        Numele aplicatiei
+                </p>
+                <h3>Sectiunea 2</h3>
+                <label>Numar 1:</label>
+                <input id="nr1" pattern="[A-Z0-9]{2}">
+                <label>Numar 2:</label>
+                <input id="nr2" pattern="[A-Z0-9]{2}">
+                <label>Numar 3:</label>
+                <input id="nr3" pattern="[A-Z0-9]{2}">
+                <label>Numar 4:</label>
+                <input id="nr4" pattern="[A-Z0-9]{2}">
+                <label>Numar 5:</label>
+                <input id="nr5" pattern="[A-Z0-9]{2}">
+                <label>Numar 6:</label>
+                <input id="nr6" pattern="[A-Z0-9]{2}">
+                <label>Numar 7:</label>
+                <input id="nr7" pattern="[A-Z0-9]{2}">
+                <label>Numar 8:</label>
+                <input id="nr8" pattern="[A-Z0-9]{2}">
+                <button onclick="lotoInternet()">Extragere</button>
+                <p id="loto">
+                    
+                </p>
+            </section>
+            
+        </aside>
+        <hr>
+    </main>
+    <footer>
+        &copy;.2021. Programare web
+    </footer>
+</body>
+
+</html>
