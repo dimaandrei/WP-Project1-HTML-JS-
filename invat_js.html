@@ -11,6 +11,74 @@
             text-indent: 1cm;
             text-align: center;
         }
+        section h3{
+            border: 3px solid rgb(3, 19, 3);
+            position: relative;
+            text-align: center;
+            border-radius: 4px;
+            padding-left:30px;
+            background-image: linear-gradient(to right,rgb(19, 22, 22), rgb(113, 127, 153));
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+        .sec2 {
+            height: 200px;
+            position: relative;
+            border: 3px solid rgb(3, 19, 3);
+           
+        }
+        .sec1{
+            
+            border: 3px solid rgb(3, 19, 3);
+        }
+        .sec3{
+            
+            border: 3px solid rgb(3, 19, 3);
+        }
+        .center {
+            margin: 0;
+            position: absolute;
+            
+            left: 50%;
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        .sec2 span{
+            padding-left:170px;
+        }
+        .sec1 p{
+            background-image: linear-gradient(to left,rgb(19, 22, 22), rgb(113, 127, 153));
+            color: aqua;
+            
+        }
+        .sec2 label{
+            border: 3px solid rgb(18, 183, 212);
+            border-radius: 10px;
+            color:azure;
+            background-image: linear-gradient(to right,rgb(19, 22, 22), rgb(10, 29, 65));
+        }
+        .sec2 p{
+            text-align: left;
+        }
+        .extragere{
+            text-align: center;
+            padding-right: 150px;
+            color: rgb(104, 12, 128);
+            font-size: larger;
+            font-weight: bold;
+            border: 1px solid rgb(18, 183, 212);
+            background-image: linear-gradient(to right,rgb(189, 238, 238), rgb(166, 193, 245));
+        }
+        .sec3 label{
+            padding-left:30px;
+            color:seashell
+        }
+        .sec3 canvas{
+            width: 30%;
+            margin-left: 480px;
+            
+            background-color: white;
+        }
     </style>
 </head>
 
@@ -27,53 +95,90 @@
         <a href="inregistreaza.html">Înreg</a>&nbsp;&nbsp;
         <a href="video.html">Video</a>&nbsp;&nbsp;
         <a href="despre_html.html">Despre</a>&nbsp;&nbsp;
-        <a href="Desen.html">Desen</a>
+        <a href="Desen.html">Desen</a>&nbsp;&nbsp;
         <a href="invat_js.html">ÎnvăţJS</a>
         <hr>
     </nav>
     <main>
         <aside>
             <section>
-                <h3>Sectiunea 1</h3>
-                <p id="date">
-                    Data curenta
-                </p>
-                <p id="adrURL">
-                    Adresa URL
-                </p>
-                <p id="locName">
-                    Locatia
-                </p>
-                <p id="appName">
-                    Numele aplicatiei
-                </p>
-                <p id="appVersion">
-                        Numele aplicatiei
-                </p>
-                <p id="userAgent">
-                        Numele aplicatiei
-                </p>
-                <h3>Sectiunea 2</h3>
-                <label>Numar 1:</label>
-                <input id="nr1" pattern="[A-Z0-9]{2}">
-                <label>Numar 2:</label>
-                <input id="nr2" pattern="[A-Z0-9]{2}">
-                <label>Numar 3:</label>
-                <input id="nr3" pattern="[A-Z0-9]{2}">
-                <label>Numar 4:</label>
-                <input id="nr4" pattern="[A-Z0-9]{2}">
-                <label>Numar 5:</label>
-                <input id="nr5" pattern="[A-Z0-9]{2}">
-                <label>Numar 6:</label>
-                <input id="nr6" pattern="[A-Z0-9]{2}">
-                <label>Numar 7:</label>
-                <input id="nr7" pattern="[A-Z0-9]{2}">
-                <label>Numar 8:</label>
-                <input id="nr8" pattern="[A-Z0-9]{2}">
-                <button onclick="lotoInternet()">Extragere</button>
-                <p id="loto">
+                <div class="sec1">
+
+                    <h3>Sectiunea 1 - Date</h3> 
+                    <p id="date">
+                        Data curenta
+                    </p>
                     
-                </p>
+                    <p id="adrURL">
+                        Adresa URL
+                    </p>
+
+                    <p id="locName">
+                        Locatia
+                    </p>
+                    
+                    <p id="appName">
+                        Numele aplicatiei
+                    </p>
+                    <p id="appVersion">
+                            Numele aplicatiei
+                    </p>
+                    <p id="userAgent">
+                            Numele aplicatiei
+                    </p>
+                    
+                </div>
+                <div class="sec2">
+                    <h3>Sectiunea 2 - Internet Loto</h3>
+                    <span>
+                        <label>Bila 1:</label>
+                        <input id="1" pattern="[A-Z0-9]{2}">
+                        <label>Bila 2:</label>
+                        <input id="2" pattern="[A-Z0-9]{2}">
+                        <label>Bila 3:</label>
+                        <input id="3" pattern="[A-Z0-9]{2}">
+                        <label>Bila 4:</label>
+                        <input id="4" pattern="[A-Z0-9]{2}">
+                    </span>
+                    <br>
+                    <span>
+                        <label>Bila 5:</label>
+                        <input id="5" pattern="[A-Z0-9]{2}">
+                        <label>Bila 6:</label>
+                        <input id="6" pattern="[A-Z0-9]{2}">
+                        <label>Bila 7:</label>
+                        <input id="7" pattern="[A-Z0-9]{2}">
+                        <label>Bila 8:</label>
+                        <input id="8" pattern="[A-Z0-9]{2}">
+                        <br>
+                        <div class="center">
+                            <button onclick="lotoInternet()">Extragere</button>
+                        </div>
+                        <br><br>
+                        <div class="extragere">
+                            <span id="bile_extrase">
+
+                            </span>
+                            <br>
+                            <span id="nrBile">
+
+                            </span>
+                        </div>
+                    
+                    </span>
+                </div>
+                <div class="sec3">
+                    <h3>Sectiunea 3 - Canvas</h3>
+                    <label for="drawing">Select your favorite color for drawing:</label>
+                    <input type="color" id="drawing" name="drawing" value="#ff0000"><br><br>
+                    <label for="filling">Select your favorite color for filling:</label>
+                    <input type="color" id="filling" name="filling" value="#ffff00"><br><br>
+                   
+                    <canvas onclick="drawRectangle(event)" id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                   
+                </div>
             </section>
             
         </aside>
