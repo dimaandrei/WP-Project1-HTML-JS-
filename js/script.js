@@ -76,3 +76,63 @@ function drawRectangle(e){
         pct2=null;
     }
 }
+
+
+function insertRow(){
+    var y = document.getElementById("row").value;
+    var color = document.getElementById("celCol").value;
+    var table = document.getElementById("dinamicTable");
+    var rowCnt = table.rows.length;
+    var colCnt = table.rows[0].cells.length;
+    var row;
+    if(y>rowCnt)
+    {
+        row = table.insertRow(rowCnt);
+    } 
+    else{
+        row = table.insertRow(y);
+    }
+    var i;
+    for(i=0; i<colCnt;++i)
+    {
+        let cell = row.insertCell(i);
+        cell.style.backgroundColor = color;
+        cell.height ="20";
+        cell.innerHTML="New row.";
+    }		
+
+			
+}
+function insertColumn(){
+    var x = parseInt(document.getElementById("col").value);
+    var color = document.getElementById("celCol").value;
+    var table = document.getElementById("dinamicTable");
+    var rows = document.getElementsByTagName("tr");
+    var rowCnt = table.rows.length;
+    var colCnt = table.rows[0].cells.length;
+    var col;
+    var i;
+    for(i=0; i<rowCnt;++i)
+    {
+        let cell;
+        if(x>colCnt)
+        {
+            cell = rows[i].insertCell(colCnt);
+        }
+        else{
+            cell = rows[i].insertCell(x);
+        }
+        cell.style.backgroundColor = color;
+        cell.innerHTML="New col.";
+    }
+}
+
+function layout4X1(){
+    document.getElementById("divWithLayout").className='layout1';
+}
+function layout2X2(){
+    document.getElementById("divWithLayout").className='layout2';
+}
+function layout1X4(){
+    document.getElementById("divWithLayout").className='layout3';
+}

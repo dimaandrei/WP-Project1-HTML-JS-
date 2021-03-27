@@ -35,6 +35,11 @@
             
             border: 3px solid rgb(3, 19, 3);
         }
+        .sec4{
+            
+            border: 3px solid rgb(3, 19, 3);
+            text-align: center;
+        }
         .center {
             margin: 0;
             position: absolute;
@@ -42,9 +47,11 @@
             left: 50%;
             -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+            margin-top: 7px;
         }
         .sec2 span{
-            padding-left:170px;
+            
+            margin-left: 200px;
         }
         .sec1 p{
             background-image: linear-gradient(to left,rgb(19, 22, 22), rgb(113, 127, 153));
@@ -79,6 +86,34 @@
             
             background-color: white;
         }
+        table, th{
+            text-align:center;
+            border: 3px solid black;
+            border-collapse: collapse;
+            width:100%;
+            margin-top: 50px;
+           
+            position: relative;
+            margin-bottom: 50px;
+        }
+        td {
+            width: 25% ;
+            border: 2px solid rgb(111, 219, 238);
+        }
+        .layout1{
+            column-count: 1;
+        }
+        .layout2{
+            column-count: 2;
+        }
+        .layout3{
+            column-count: 4;
+        }
+        aside {
+    
+            float: left;
+   
+        }
     </style>
 </head>
 
@@ -100,13 +135,18 @@
         <hr>
     </nav>
     <main>
-        <aside>
+        <aside >
+            <button onclick="layout4X1()">4x1</button><br>
+            <button onclick="layout2X2()">2x2</button><br>
+            <button onclick="layout1X4()">1x4</button><br>
+        </aside>
+        <div id="divWithLayout" class="layout1">
             <section>
                 <div class="sec1">
 
-                    <h3>Sectiunea 1 - Date</h3> 
+                    <h3>Secțiunea 1 - Date</h3> 
                     <p id="date">
-                        Data curenta
+                        Data curentă
                     </p>
                     
                     <p id="adrURL">
@@ -114,22 +154,24 @@
                     </p>
 
                     <p id="locName">
-                        Locatia
+                        Locația
                     </p>
                     
                     <p id="appName">
-                        Numele aplicatiei
+                        Numele aplicației
                     </p>
                     <p id="appVersion">
-                            Numele aplicatiei
+                            Versiunea aplicației
                     </p>
                     <p id="userAgent">
-                            Numele aplicatiei
+                            Sistem de operare
                     </p>
                     
                 </div>
+            </section>
+            <section>
                 <div class="sec2">
-                    <h3>Sectiunea 2 - Internet Loto</h3>
+                    <h3>Secțiunea 2 - Internet Loto</h3>
                     <span>
                         <label>Bila 1:</label>
                         <input id="1" pattern="[A-Z0-9]{2}">
@@ -167,8 +209,10 @@
                     
                     </span>
                 </div>
+            </section>
+            <section>
                 <div class="sec3">
-                    <h3>Sectiunea 3 - Canvas</h3>
+                    <h3>Secțiunea 3 - Canvas</h3>
                     <label for="drawing">Select your favorite color for drawing:</label>
                     <input type="color" id="drawing" name="drawing" value="#ff0000"><br><br>
                     <label for="filling">Select your favorite color for filling:</label>
@@ -179,11 +223,42 @@
                     </canvas>
                    
                 </div>
+            <section>
+                <div class="sec4">
+                    <h3>Secțiunea 4 - Tabel dinamic</h3>
+                    <label>Column:</label>
+                    <input id="col" pattern="[0-9]{2}">
+                    <label>Row:</label>
+                    <input id="row" pattern="[0-9]{2}">
+                    <label for="celCol">Select your favorite color for filling the cell:</label>
+                    <input type="color" id="celCol" name="celCol" value="#ffff00">
+                    <button onclick="insertRow()">Insert row</button>
+                    <button onclick="insertColumn()">Insert column</button>
+                    <br>
+                    <table id="dinamicTable">
+                        <tr >
+                          <td >Month</td>
+                          <td >Savings</td>
+                        </tr>
+                        <tr>
+                          <td >January</td>
+                          <td >$100</td>
+                        </tr>
+                        <tr>
+                          <td >February</td>
+                          <td >$80</td>
+                        </tr>
+                      </table>
+                    <br>
+                    
+                </div>
             </section>
-            
-        </aside>
+        </div>
+
         <hr>
+        
     </main>
+    
     <footer>
         &copy;.2021. Programare web
     </footer>
