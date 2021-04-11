@@ -8,7 +8,6 @@ body {
 nav {
     background-color:rgb(235, 99, 75);
     background-image: linear-gradient(to left,rgb(19, 22, 22), rgb(113, 127, 153));
-    
     font-family: courier;
     font-size: 130%;
     text-align: center;

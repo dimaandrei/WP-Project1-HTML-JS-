@@ -1,118 +1,93 @@
 <!DOCTYPE html>
-<html lang="ro-RO">
 
-<head>
-    <title>Înregistrează</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/stil.css" />
-    <style>
-        input {
-            border: 2px solid rgb(6, 41, 82);
-            border-radius: 4px;
-            background-image: linear-gradient(to right, rgb(152, 199, 243),  rgb(81, 115, 167));
-            color: blue;
+<style>
+    input {
+        border: 2px solid rgb(6, 41, 82);
+        border-radius: 4px;
+        background-image: linear-gradient(to right, rgb(152, 199, 243), rgb(81, 115, 167));
+        color: blue;
 
-            background-repeat: no-repeat;
-            text-align: center;
-           
-        }
-        label {
-            padding: 1cm;
-            color:whitesmoke;
-            text-decoration:underline wavy rgb(112, 172, 228);
-            
-        }
-        select {
+        background-repeat: no-repeat;
+        text-align: center;
 
-            background-color: rgb(63, 103, 155);
-        }
-        legend {
-            border:2px solid black;
-            border-radius: 4px;
-            color:cornflowerblue;
-            text-decoration: underline;
-            width: 10%;
-            font-size: 19px;
-        }
-       
-    </style>
-</head>
-<body>
-<header>
-    <img src="imagini/HTML_logo.png" alt="Ceva">
-    <h1>Programare web</h1>
-</header>
-<nav>
+    }
+
+    label {
+        padding: 1cm;
+        color: whitesmoke;
+        text-decoration: underline wavy rgb(112, 172, 228);
+
+    }
+
+    select {
+
+        background-color: rgb(63, 103, 155);
+    }
+
+    legend {
+        border: 2px solid black;
+        border-radius: 4px;
+        color: cornflowerblue;
+        text-decoration: underline;
+        width: 10%;
+        font-size: 19px;
+    }
+</style>
+
+<section>
+    <h1>Formular</h1>
+    <form>
+        <fieldset>
+            <legend>Informații generale:</legend>
+            <label for="numeUtil">Nume utilizator:</label>
+            <input type="text" id="numeUtil" name="numeUtil" /><br><br>
+            <label for="parola">Parola:</label>
+            <input type="password" id="parola" name="parola" /><br><br>
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume" /><br><br>
+            <label for="prenume">Prenume:</label>
+            <input type="text" id="prenume" name="prenume" /><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br><br>
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" /><br><br>
+            <legend>Informații personale:</legend>
+            <br>
+            <label for="sexul">Sexul:</label>
+            <select name="sexul" id="sexul">
+                <option value="masculin">M</option>
+                <option value="feminin">F</option>
+                <option value="neutru">Neutru</option>
+            </select>
+            <br><br>
+            <label for="mancare">Mâncarea preferată:</label>
+            <input list="mancare">
+            <datalist id="mancare">
+                <option value="Ananas"></option>
+                <option value="Banane"></option>
+                <option value="Mere"></option>
+            </datalist>
+            <br><br>
+            <label for="culoare">Culoarea preferată:</label>
+            <input type="color" id="culoare" name="culoare" /><br><br>
+
+            <label for="birthdate">Data nașterii:</label>
+            <input type="date" id="birthdate" name="birthdate" /><br><br>
+
+            <label for="oraNasterii">Ora nașterii:</label>
+            <input type="time" id="oraNasterii" name="oraNasterii" /><br><br>
+
+            <label for="varsta">Vârsta:</label>
+            <input type="range" id="varsta" name="varsta" /><br><br>
+
+            <label for="adresa">Adresa paginii personale:</label>
+            <input type="url" id="adresa" name="adresa" /><br><br>
+
+            <label>Descriere:</label>
+            <textarea rows="3"></textarea>
+            <button disabled type="submit" value="Inregistreaza">
+        </fieldset>
+    </form>
+
     <hr>
-    <a href="index.html">Acasă</a>&nbsp;&nbsp;
-    <a href="inregistreaza.html">Înreg</a>&nbsp;&nbsp;
-    <a href="video.html">Video</a>&nbsp;&nbsp;
-    <a href="despre_html.html">Despre</a>&nbsp;&nbsp;
-    <a href="Desen.html">Desen</a>&nbsp;&nbsp;
-    <a href="invat_js.html">ÎnvăţJS</a>
-    <hr>
-</nav>
-<main>
-    <section>
-        <h1>Formular</h1>
-        <form>
-            <fieldset>
-                <legend>Informații generale:</legend>
-                <label for="numeUtil">Nume utilizator:</label>
-                <input type="text" id="numeUtil" name="numeUtil" /><br><br>
-                <label for="parola">Parola:</label>
-                <input type="password" id="parola" name="parola" /><br><br>
-                <label for="nume">Nume:</label>
-                <input type="text" id="nume" name="nume" /><br><br>
-                <label for="prenume">Prenume:</label>
-                <input type="text" id="prenume" name="prenume" /><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" /><br><br>
-                <label for="telefon">Telefon:</label>
-                <input type="tel" id="telefon" name="telefon" /><br><br>
-                <legend>Informații personale:</legend>
-                <br>
-                <label for="sexul">Sexul:</label>
-                <select name="sexul" id="sexul">
-                    <option value="masculin">M</option>
-                    <option value="feminin">F</option>
-                    <option value="neutru">Neutru</option>
-                </select>
-                <br><br>
-                <label for="mancare">Mâncarea preferată:</label>
-                <input list="mancare">
-                <datalist id="mancare">
-                    <option value="Ananas"></option>
-                    <option value="Banane"></option>
-                    <option value="Mere"></option>
-                </datalist>
-                <br><br>
-                <label for="culoare">Culoarea preferată:</label>
-                <input type="color" id="culoare" name="culoare" /><br><br>
-
-                <label for="birthdate">Data nașterii:</label>
-                <input type="date" id="birthdate" name="birthdate" /><br><br>
-
-                <label for="oraNasterii">Ora nașterii:</label>
-                <input type="time" id="oraNasterii" name="oraNasterii" /><br><br>
-
-                <label for="varsta">Vârsta:</label>
-                <input type="range" id="varsta" name="varsta" /><br><br>
-
-                <label for="adresa">Adresa paginii personale:</label>
-                <input type="url" id="adresa" name="adresa" /><br><br>
-
-                <label>Descriere:</label>
-                <textarea rows="3"></textarea>
-                <button disabled type="submit" value="Inregistreaza">
-            </fieldset>
-        </form>
-
-    </section>
-    <hr>
-</main>
-<footer>
-    &copy;.2021. Programare web
-</footer>
-</body>
-</html>
+</section>

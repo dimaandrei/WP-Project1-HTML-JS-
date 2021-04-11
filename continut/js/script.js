@@ -136,3 +136,18 @@ function layout2X2(){
 function layout1X4(){
     document.getElementById("divWithLayout").className='layout3';
 }
+
+function schimbaContinut(resursa)
+{
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("continut").innerHTML = this.responseText;
+      if(jsFisier){
+          var elementScript = document.createElement('script');
+      }
+    }
+  };
+  xhttp.open("GET", resursa + ".html", true);
+  xhttp.send();
+}
