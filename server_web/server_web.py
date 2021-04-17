@@ -68,9 +68,6 @@ if __name__ == '__main__':
 				#buffer += fileManager.read(1024)
 			clientsocket.send(bytes(gzip.compress(buffer)))
 
-
-
-
 		except IOError:
 			message = 'Eroare! Resursa ' + resursaCeruta + ' nu a fost gasita.'
 			print(message)
