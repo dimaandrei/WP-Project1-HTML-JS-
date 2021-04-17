@@ -154,8 +154,4 @@ function schimbaContinut(resursa, jsFisier, jsFct) {
     xhttp.open("GET", resursa + ".html", true);
     xhttp.send();
 }
-setInterval(()=>{
-    let produse = localStorage.getItem("produse");
-    postMessage(produse);
 
-},1000);
