@@ -1,10 +1,9 @@
+import gzip
+import json
 import os
 import socket
-import gzip
-
 # creeaza un server socket
 import threading
-import zlib
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # specifica ca serverul va rula pe portul 5678, accesibil de pe orice ip al serverului
@@ -32,6 +31,28 @@ def newClient(clientsocket, address):
 
     elements = linieDeStart.split(' ')
     resursaCeruta = elements[1]
+
+    if elements[0] == 'POST':
+        if elements[1] == '/api/utilizatori':
+            message = cerere.split("\r\n\r\n")[1]
+            jsonObject = json.loads(message)
+            data = []
+            with open('../continut/resurse/utilizatori.json') as json_file:
+                data = json.load(json_file)
+                data.append(jsonObject)
+            with open('../continut/resurse/utilizatori.json', 'w') as outfile:
+                json.dump(data, outfile)
+            message = "Fisierul cu utilizatori a fost updatat!!!!!"
+            print(message)
+            clientsocket.sendall(bytes('HTTP/1.1 200 OK\r\n', 'utf-8'))
+            clientsocket.sendall(bytes('Content-Length: ' + str(len(message.encode('utf-8'))) + '\r\n', 'utf-8'))
+            clientsocket.sendall(bytes('Content-Type: text/plain\r\n', 'utf-8'))
+            clientsocket.sendall(bytes('Server: Server-ul PW\r\n', 'utf-8'))
+            clientsocket.sendall(bytes('\r\n', 'utf-8'))
+            clientsocket.sendall(bytes(message, 'utf-8'))
+            clientsocket.close()
+            return
+
 
     fileName = '../continut' + resursaCeruta
     fileManager = None

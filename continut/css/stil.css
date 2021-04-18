@@ -57,7 +57,7 @@ main h1 {
 section h1{
     font-size: 40px;
   background: -webkit-linear-gradient(rgb(104, 135, 207), rgb(235, 225, 225));
-
-   /*-webkit-background-clip: text;*/
+    text-align: center;
+   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -155,3 +155,57 @@ function schimbaContinut(resursa, jsFisier, jsFct) {
     xhttp.send();
 }
 
+function checkUser() {
+    var xhttp = new XMLHttpRequest();
+    let date=[];
+    let user = document.getElementById("user").value;
+    let password = document.getElementById("password").value;
+    xhttp.onreadystatechange = function(){
+        if(this.readyState==4 && this.status == 200){
+            var str ="";
+            date = JSON.parse(this.responseText);
+            
+            for(var i in date)
+            {    
+                if(user == date[i]["utilizator"])
+                {
+                    str += "User gasit!\n";
+                    if(password == date[i]["parola"])
+                    {
+                        str += "Parola este corecta!";
+                    }
+                    else{
+                        str += "Parola incorecta!";
+                    }
+                    break;
+                }
+            }
+            if(str=='')
+            {
+                str += "User not found!!!";   
+            }
+            document.getElementById("answer").innerHTML = str;
+            
+        }
+    }
+    xhttp.open("GET","/resurse/utilizatori.json",true);
+    xhttp.send();
+}
+
+
+function updateUserList() {
+    var xhttp = new XMLHttpRequest();
+    let date=[];
+    let user = document.getElementById("numeUtil").value;
+    let password = document.getElementById("parola").value;
+    let params = "{\"utilizator\": \""+user+"\", \"parola\": \"" +password+"\"}";
+    xhttp.open("POST","/api/utilizatori",true);
+    xhttp.setRequestHeader('Content-Type', 'application/json');
+    xhttp.onreadystatechange = function(){
+        if(this.readyState==4 && this.status == 200){
+            alert(xhttp.responseText);
+        }
+    }
+   
+    xhttp.send(params);
+}

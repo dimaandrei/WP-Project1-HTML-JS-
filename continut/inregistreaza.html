@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 
 <style>
     input {
@@ -35,7 +35,7 @@
 </style>
 
 <section>
-    <h1>Formular</h1>
+    <h1>Formular:</h1>
     <form>
         <fieldset>
             <legend>Informații generale:</legend>
@@ -51,6 +51,9 @@
             <input type="email" id="email" name="email" /><br><br>
             <label for="telefon">Telefon:</label>
             <input type="tel" id="telefon" name="telefon" /><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
             <legend>Informații personale:</legend>
             <br>
             <label for="sexul">Sexul:</label>
@@ -84,11 +87,9 @@
             <input type="url" id="adresa" name="adresa" /><br><br>
 
             <label>Descriere:</label>
-            <textarea rows="3"></textarea>
+            <textarea rows="3"></textarea>&nbsp; &nbsp;
             
-            <button disabled type="submit">Înregistrează</button>
+            <button type="button" onclick="updateUserList();">Înregistrează</button> <!--disabled-->
         </fieldset>
     </form>
-
-    <hr>
 </section>
