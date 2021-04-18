@@ -7,6 +7,28 @@ class Produs {
         this.pret = pret;
     }
 };
+
+
+class Stocare{
+    constructor() {
+    }
+};
+
+class LocalStorage extends Stocare {
+    constructor() {
+        super();
+    }
+};
+
+class IndexedDB extends Stocare{
+    constructor() {
+        super();
+    }
+    onerror(){
+        console.log("Why didn't you allow my web app to use IndexedDB?!");
+    }
+};
+
 //var tb = document.getElementById("tabel_cumparaturi");
 
 function adauga() {
