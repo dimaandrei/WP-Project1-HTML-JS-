@@ -2,16 +2,22 @@
     <legend>Informații generale:</legend>
     <form>
         <label for="nume">Nume:</label>
-        <input type="text" id="nume" name="nume" />
+        <input type="text" id="nume" name="nume" />&nbsp;
         <label for="cantitate">Cantitate:</label>
-        <input type="text" id="cantitate" name="cantitate" />
+        <input type="text" id="cantitate" name="cantitate" />&nbsp;
         <label for="pret">Preț:</label>
-        <input type="text" id="pret" name="pret" />
-        <br>
+        <input type="text" id="pret" name="pret" />&nbsp;
         <button type="button" id="button" onclick="adauga();">Adaugă</button>
     </form>
+    
     <br>
-
+    <label for="stocare">Stocare:</label>
+    <select name="stocare" id="stocare">
+        <option value="localStorage">LocalStorage</option>
+        <option value="indexedDB">IndexedDB</option>
+    </select>
+    <br>
+    <br>
     <table id="tabel_cumparaturi">
         <th>Nr.</th>
         <th>Nume produs</th>
