@@ -1,34 +1,48 @@
 body {
     background-color: rgb(107, 130, 151);
-    background-image: url("../imagini/background.jpg") ;   
-    background-size:     cover;                      
-    background-repeat:   repeat;
-    background-position: center center; 
+    background-image: url("../imagini/background.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
 }
+
 nav {
-    background-color:rgb(235, 99, 75);
-    background-image: linear-gradient(to left,rgb(19, 22, 22), rgb(113, 127, 153));
-    font-family: courier;
-    font-size: 130%;
+    background-color: rgb(235, 99, 75);
+    background-image: linear-gradient(to left, rgb(19, 22, 22), rgb(113, 127, 153));
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 150%;
     text-align: center;
 }
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+
 a.highlight:hover {
     color: #000000;
 }
+
 a:link {
     color: #00FFFF;
 }
+
 a:visited {
     color: #358cc7;
 }
+
 a:active {
     color: #0000FF;
 }
-p::first-letter {
+
+#acasa p::first-letter {
     color: #83d7ec;
     font-size: xx-large;
 }
-p::first-line {
+
+#acasa p::first-line {
     color: #8484ca;
     font-variant: ruby;
 }
@@ -36,28 +50,355 @@ p::first-line {
 p::marker {
     color: rgb(241, 241, 226);
     font-size: 23px;
-  }
-img{
+}
+
+img {
     margin-right: auto;
     display: block;
     margin-left: auto;
 }
+
 header h1 {
     text-align: center;
     text-decoration: underline dotted rgb(112, 172, 228);
-    
     align-items: center;
-    background-image: linear-gradient(to right,rgb(19, 22, 22), rgb(113, 127, 153));
-
+    background-image: linear-gradient(to right, rgb(19, 22, 22), rgb(113, 127, 153));
 }
+
 main h1 {
-    padding-left: 25px;    
+    padding-left: 25px;
 }
 
-section h1{
-    font-size: 40px;
-  background: -webkit-linear-gradient(rgb(104, 135, 207), rgb(235, 225, 225));
+#acasa {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100%;
+    text-indent: 1cm;
     text-align: center;
-   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+main h1 {
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(196, 64, 24), rgb(226, 172, 90));
+    background-clip: unset;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#acasa h1 {
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(36, 15, 53), rgb(183, 117, 245));
+    background-clip: unset;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 55px;
+    text-decoration: underline dashed rgb(60, 15, 70);
+}
+
+#inregistreaza textarea, #inregistreaza select {
+    border: 2px solid rgb(30, 183, 230);
+    border-radius: 4px;
+    background-image: linear-gradient(to right, rgb(219, 210, 85), rgb(233, 116, 7));
+    color: rgb(39, 39, 44);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#inregistreaza legend {
+    border: 2px solid rgb(177, 229, 236);
+    border-radius: 3px;
+    padding-left: 25px;
+    color: rgb(9, 14, 22);
+    text-decoration: underline;
+    width: 18%;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 27px;
+    background: -webkit-linear-gradient(rgb(55, 131, 145), rgb(134, 212, 199));
+    font-weight: bold;
+}
+
+#inregistreaza fieldset {
+    padding-left: 50px;
+    background-image: url("../imagini/loading.gif");
+}
+
+#inregistreaza label {
+    padding: 1cm;
+    color: whitesmoke;
+    /*text-decoration: underline wavy rgb(112, 172, 228);*/
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#inregistreaza input {
+    border: 2px solid rgb(6, 41, 82);
+    border-radius: 4px;
+    background-image: linear-gradient(to right, rgb(81, 87, 95), rgb(197, 212, 226));
+    color: rgb(39, 39, 44);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#inregistreaza h1 {
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(207, 128, 63), rgb(226, 172, 90));
+    background-clip: unset;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline dashed rgb(206, 142, 58);
+}
+
+#inregistreaza .button {
+    margin: 0;
+    position: absolute;
+    left: 48%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#inregistreaza .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#inregistreaza .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#inregistreaza .button:hover span {
+    padding-right: 25px;
+}
+
+#inregistreaza .button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#despre .about {
+    color: #f4511e;
+    background-image: url("../imagini/unnamed.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100%;
+    text-indent: 1cm;
+    text-align: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.center thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.center th,
+.center td {
+    padding: 12px 15px;
+}
+
+.center tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.center tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.center tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.center tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+#despre .formular {
+    padding-top: 10px;
+    color: #f4a91e;
+    background-image: url("../imagini/BoringFeistyBumblebee-small.gif");
+    background-repeat: round;
+    border-radius: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100%;
+    text-indent: 1cm;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+#despre .formular .button {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 4px;
+    background-color: #f47e1e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#despre .formular .button span,  #verifica .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#despre .formular .button span:after, #verifica .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#despre .formular .button:hover span, #verifica .button:hover span  {
+    padding-right: 25px;
+}
+
+#despre .formular .button:hover span:after, #verifica .button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+#despre input {
+    border: 2px solid rgb(30, 183, 230);
+    border-radius: 4px;
+    background-image: linear-gradient(to right, rgb(219, 210, 85), rgb(233, 116, 7));
+    color: rgb(39, 39, 44);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#despre input, #despre textarea, #despre select {
+    border: 2px solid rgb(30, 183, 230);
+    border-radius: 4px;
+    background-image: linear-gradient(to right, rgb(219, 210, 85), rgb(233, 116, 7));
+    color: rgb(39, 39, 44);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#despre .liste {
+    color: #79e63b;
+    background-image: url("../imagini/fondos-gif-para-html-10.gif");
+    background-repeat: round;
+    border-radius: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100%;
+    text-indent: 1cm;
+    text-align: center;
+    padding-bottom: 70px;
+    list-style-position: inside;
+}
+
+#verifica {
+    padding-top: 30px;
+    color: #3967bd;
+    background-image: url("../imagini/css-car-preloader.gif");
+    background-repeat: round;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#verifica .button {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
+    border-radius: 4px;
+    background-color: #2c5ea8;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 130px;
+
+}
+
+#verifica .answer {
+    width: 400px;
+    height: 50px;
+    font-size: 150%;
+    border: solid 2px #f3f3f3;
+    margin: auto;
+    color:white;
+    border-radius: 5px;
+    text-decoration: underline;
+    font-family: 'Ubuntu Mono', monospace;
+    background: -webkit-linear-gradient(rgb(82, 79, 60), rgb(66, 73, 95));
+    font-weight: bold;
+}
+#verifica legend{
+    text-align: center;
+    text-decoration: underline;
+    color: #b9bda4;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+#verifica label{
+    font-family: 'Indie Flower', cursive;
+    font-size: 23px;
+    font-weight: bold;
+}
+#verifica input{
+    border-radius: 4px;
+    background-image: linear-gradient(to right, rgb(152, 158, 167), rgb(76, 87, 97));
+    color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-weight: bold;
 }

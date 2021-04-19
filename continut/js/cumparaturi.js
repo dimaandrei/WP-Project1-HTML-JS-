@@ -9,7 +9,7 @@ class Produs {
 };
 
 
-class Stocare{
+class Stocare {
     constructor() {
     }
 };
@@ -20,16 +20,35 @@ class LocalStorage extends Stocare {
     }
 };
 
-class IndexedDB extends Stocare{
+class IndexedDB extends Stocare {
     constructor() {
         super();
+        this.db;
     }
-    onerror(){
-        console.log("Why didn't you allow my web app to use IndexedDB?!");
+    set  dbInstance(x){
+        this.db=x;
+    }
+    get dbInstance(){
+        return this.db;
     }
 };
+/*Trebuie mutat pe undeva dar inca ma gandesc unde si cum */
+var dbObject= new IndexedDB();
+var request = indexedDB.open("MyTestDatabase");
+request.onerror = function(event) {
+  console.log("Why didn't you allow my web app to use IndexedDB?!");
+};
+request.onsuccess = function(event) {
+  dbObject.set(event.target.result);
 
-//var tb = document.getElementById("tabel_cumparaturi");
+};
+
+
+
+/**********************************************************/
+
+
+
 
 function adauga() {
 
@@ -62,6 +81,9 @@ function adauga() {
     //adaug in x (nume, cantitate)
     // localStorage.setItem(..)
 }
+
+
+
 var myWorker;
 function startWorker() {
     if (window.Worker) {
@@ -80,7 +102,7 @@ function startWorker() {
                     let count = 0
                     let row = table.insertRow(-1);
                     for (var j in arr[i]) {
-                       
+
                         let cell = row.insertCell(count);
                         cell.innerHTML = arr[i][j];
                         ++count;
@@ -93,7 +115,8 @@ function startWorker() {
         console.log('Your browser doesn\'t support web workers.');
     }
 }
-if(myWorker) {
-    console.log("bag");
+
+function changeStorage(){
     
+    console.log("haha");
 }

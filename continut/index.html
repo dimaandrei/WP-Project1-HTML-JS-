@@ -8,11 +8,17 @@
     <script type="text/javascript" src="js/cumparaturi.js"></script>
     <script type="text/javascript" src="js/persoane.js"></script>
     <script type="text/javascript" src="js/worker.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/stil.css" />
 
 </head>
 
-<body>
+<body onload="schimbaContinut('acasa'); return false">
     <header>
         <img src="imagini/HTML_logo.png" alt="Ceva">
         <br><br>
@@ -29,17 +35,18 @@
         <a href="#" onclick="schimbaContinut('Desen'); return false">Desen</a>&nbsp;&nbsp;
         <a href="#" onclick="schimbaContinut('invat_js', '/js/script.js', 'laIncarcare'); return false">ÎnvăţJS</a>&nbsp;&nbsp;
         <a href="#" onclick="schimbaContinut('persoane', '/js/persoane.js', 'incarcaPersoane'); return false">Persoane</a>&nbsp;&nbsp;
-        <a href="#" onclick="schimbaContinut('verifica', '', ''); return false">Verifica</a>&nbsp;&nbsp;
+        <a href="#" onclick="schimbaContinut('verifica', '', ''); return false">Verifică</a>&nbsp;&nbsp;
         <a href="#" onclick="schimbaContinut('cumparaturi', '/js/persoane.js', 'startWorker'); return false">Cumpărături</a>
         <hr>
     </nav>
 
-
+    
     <main id="continut">
+        <span>Bine ai venit in lumea programarii web!!</span>
     </main>
     <hr>
     <footer>
-        &copy;.2021. Programare web
+        &copy;Andrei Găină . 2021 . Programare web
     </footer>
 </body>
 

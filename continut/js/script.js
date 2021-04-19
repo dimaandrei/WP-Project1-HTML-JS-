@@ -184,6 +184,7 @@ function checkUser() {
             {
                 str += "User not found!!!";   
             }
+            alert(str);
             document.getElementById("answer").innerHTML = str;
             
         }

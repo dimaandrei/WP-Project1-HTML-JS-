@@ -27,7 +27,7 @@ def newClient(clientsocket, address):
             linieDeStart = cerere[0:pozitie]
             print('S-a citit linia de start din cerere: ##### ' + linieDeStart + ' #####')
             break
-    print('S-a terminat cititrea.')
+    print('S-a terminat citirea.')
 
     elements = linieDeStart.split(' ')
     resursaCeruta = elements[1]
@@ -69,7 +69,8 @@ def newClient(clientsocket, address):
             'gif': 'image/gif',
             'ico': 'image/x-icon',
             'xml': 'application/xml',
-            'json': 'application/json'
+            'json': 'application/json',
+            'webp': 'image/webp'
         }
         tipResursa = tipuriMedia.get(extensie)
         clientsocket.sendall(bytes('HTTP/1.1 200 OK\r\n', 'utf-8'))

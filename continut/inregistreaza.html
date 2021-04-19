@@ -1,52 +1,17 @@
 
-
-<style>
-    input {
-        border: 2px solid rgb(6, 41, 82);
-        border-radius: 4px;
-        background-image: linear-gradient(to right, rgb(152, 199, 243), rgb(81, 115, 167));
-        color: blue;
-
-        background-repeat: no-repeat;
-        text-align: center;
-
-    }
-
-    label {
-        padding: 1cm;
-        color: whitesmoke;
-        text-decoration: underline wavy rgb(112, 172, 228);
-
-    }
-
-    select {
-
-        background-color: rgb(63, 103, 155);
-    }
-
-    legend {
-        border: 2px solid black;
-        border-radius: 4px;
-        color: cornflowerblue;
-        text-decoration: underline;
-        width: 10%;
-        font-size: 19px;
-    }
-</style>
-
-<section>
-    <h1>Formular:</h1>
+<section id="inregistreaza">
+    <h1> Formular: </h1>
     <form>
         <fieldset>
-            <legend>Informații generale:</legend>
+            <legend>Informații generale:</legend><br>
             <label for="numeUtil">Nume utilizator:</label>
             <input type="text" id="numeUtil" name="numeUtil" /><br><br>
             <label for="parola">Parola:</label>
             <input type="password" id="parola" name="parola" /><br><br>
             <label for="nume">Nume:</label>
-            <input type="text" id="nume" name="nume" /><br><br>
+            <input type="text" id="nume" name="nume" /><br><br><br>
             <label for="prenume">Prenume:</label>
-            <input type="text" id="prenume" name="prenume" /><br><br>
+            <input type="text" id="prenume" name="prenume" /><br><br><b></br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" /><br><br>
             <label for="telefon">Telefon:</label>
@@ -75,7 +40,7 @@
             <input type="color" id="culoare" name="culoare" /><br><br>
 
             <label for="birthdate">Data nașterii:</label>
-            <input type="date" id="birthdate" name="birthdate" /><br><br>
+            <input type="date" id="birthdate" name="birthdate" /><br><br><br>
 
             <label for="oraNasterii">Ora nașterii:</label>
             <input type="time" id="oraNasterii" name="oraNasterii" /><br><br>
@@ -89,7 +54,7 @@
             <label>Descriere:</label>
             <textarea rows="3"></textarea>&nbsp; &nbsp;
             
-            <button type="button" onclick="updateUserList();">Înregistrează</button> <!--disabled-->
+            <button class="button" type="button" onclick="updateUserList();"><span>Înregistrează</span></button> <!--disabled-->
         </fieldset>
     </form>
 </section>
