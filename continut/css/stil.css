@@ -402,3 +402,18 @@ main h1 {
     text-align: center;
     font-weight: bold;
 }
+
+#cumparaturi{
+    border-radius: 10px;
+    padding-top: 30px;
+    color: #3967bd;
+    background-image:url("../imagini/store.gif"),url("../imagini/store.gif"), url("../imagini/unnamed.jpg");
+    background-position: left,right,center;
+    background-repeat: no-repeat,no-repeat,repeat;
+    
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
