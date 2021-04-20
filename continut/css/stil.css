@@ -52,6 +52,30 @@ p::marker {
     font-size: 23px;
 }
 
+.flex-container{
+    display:flex;
+    flex-wrap:nowrap;
+}
+
+.desen{
+    background-color: rgb(141, 213, 226);
+}
+@media screen and (max-width: 800px) {
+    .desen {
+      background-color: lightgreen;
+    }
+}
+
+@media print{
+    body{
+        color:gold;
+    }
+    nav{
+        color:#0000FF;
+        display:block;
+    }
+}
+
 img {
     margin-right: auto;
     display: block;
@@ -417,3 +441,4 @@ main h1 {
     padding-bottom: 20px;
     
 }
+

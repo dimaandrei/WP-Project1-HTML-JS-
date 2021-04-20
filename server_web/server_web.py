@@ -13,7 +13,6 @@ serversocket.listen(5)
 
 
 def newClient(clientsocket, address):
-
     compressGZIP = False
     # se proceseaza cererea si se citeste prima linie de text
     cerere = ''
