@@ -1,0 +1,60 @@
+
+<section id="inregistreaza">
+    <h1> Formular: </h1>
+    <form>
+        <fieldset>
+            <legend>Informații generale:</legend><br>
+            <label for="numeUtil">Nume utilizator:</label>
+            <input type="text" id="numeUtil" name="numeUtil" /><br><br>
+            <label for="parola">Parola:</label>
+            <input type="password" id="parola" name="parola" /><br><br>
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume" /><br><br><br>
+            <label for="prenume">Prenume:</label>
+            <input type="text" id="prenume" name="prenume" /><br><br><b></br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br><br>
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" /><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informații personale:</legend>
+            <br>
+            <label for="sexul">Sexul:</label>
+            <select name="sexul" id="sexul">
+                <option value="masculin">M</option>
+                <option value="feminin">F</option>
+                <option value="neutru">Neutru</option>
+            </select>
+            <br><br>
+            <label for="mancare">Mâncarea preferată:</label>
+            <input list="mancare">
+            <datalist id="mancare">
+                <option value="Ananas"></option>
+                <option value="Banane"></option>
+                <option value="Mere"></option>
+            </datalist>
+            <br><br>
+            <label for="culoare">Culoarea preferată:</label>
+            <input type="color" id="culoare" name="culoare" /><br><br>
+
+            <label for="birthdate">Data nașterii:</label>
+            <input type="date" id="birthdate" name="birthdate" /><br><br><br>
+
+            <label for="oraNasterii">Ora nașterii:</label>
+            <input type="time" id="oraNasterii" name="oraNasterii" /><br><br>
+
+            <label for="varsta">Vârsta:</label>
+            <input type="range" id="varsta" name="varsta" /><br><br>
+
+            <label for="adresa">Adresa paginii personale:</label>
+            <input type="url" id="adresa" name="adresa" /><br><br>
+
+            <label>Descriere:</label>
+            <textarea rows="3"></textarea>&nbsp; &nbsp;
+            
+            <button class="button" type="button" onclick="updateUserList();"><span>Înregistrează</span></button> <!--disabled-->
+        </fieldset>
+    </form>
+</section>

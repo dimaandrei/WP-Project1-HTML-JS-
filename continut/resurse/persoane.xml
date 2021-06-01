@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
+
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Aviatiei</strada>
+            <numar>105</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <liceu>Colegiul National Stefan cel Mare</liceu>
+        <facultate>AC</facultate>
+        <carnet>B</carnet>
+    </persoana>
+    <persoana id="2">
+        <nume>Maxim</nume>
+        <prenume>Vasile</prenume>
+        <varsta>30</varsta>
+        <adresa>
+            <strada>Tatarasi</strada>
+            <numar>103</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+            
+        </adresa>
+        <liceu>Colegiul Racovita</liceu>
+        <facultate>ETTI</facultate>
+        <carnet>A2</carnet>
+    </persoana>
+    <persoana id="3">
+        <nume>Pop</nume>
+        <prenume>Raul</prenume>
+        <varsta>5</varsta>
+        <adresa>
+            <strada>Florilor</strada>
+            <numar>66</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <liceu>Colegiul National</liceu>
+        <facultate>DIMA</facultate>
+        <carnet>D</carnet>
+    </persoana>
+</persoane>
